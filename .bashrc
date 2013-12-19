@@ -118,8 +118,7 @@ PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
 ### Added by the Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"
 
-CDPATH=".:~/rails_projects/Cubelet-Production-Programmer/Software"
-CDPATH=".:~/rails_projects"
+CDPATH=".:~/Cubelet-Production-Programmer/Software"
 alias emacs="emacs -nw"
 
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
