@@ -5,11 +5,19 @@ ZSH=$HOME/.oh-my-zsh
 # Look in ~/.oh-my-zsh/themes/
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
-ZSH_THEME="pygmalion"
+ZSH_THEME="miloshadzic"
 
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+alias s="git status"
+alias annotate="bundle exec annotate"
+alias push="git push origin master"
+alias pull="git pull origin master"
+cd Cubelet-Production-Programmer/Software/ProductionManager/
+
+rake() { spring rake "$*"; }
+rails() { spring rails "$*"; }
 
 # Set to this to use case-sensitive completion
 # CASE_SENSITIVE="true"
