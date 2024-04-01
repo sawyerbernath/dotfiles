@@ -8,7 +8,10 @@ export ZSH="$HOME/.oh-my-zsh"
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
-ZSH_THEME="random"
+ZSH_THEME="agnoster"
+
+# Prevent agnoster theme from showing sawyer@[machine]
+export DEFAULT_USER=sawyer
 
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
@@ -85,7 +88,7 @@ source $ZSH/oh-my-zsh.sh
 # User configuration
 
 # export MANPATH="/usr/local/man:$MANPATH"
-export LEDGER_FILE=~/finance/test.journal
+export LEDGER_FILE=~/finance/2024.journal
 
 # You may need to manually set your language environment
 # export LANG=en_US.UTF-8
@@ -111,6 +114,8 @@ export EDITOR='micro'
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias m="micro"
+alias h="hledger"
+alias j="just"
 alias b='buku --suggest'
 alias s="spotify_player"
 alias z="micro ~/.zshrc"
