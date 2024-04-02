@@ -120,9 +120,10 @@ alias b='buku --suggest'
 alias s="spotify_player"
 alias z="micro ~/.zshrc"
 alias dua="dua interactive"
-alias l="ls" #eza -al --no-permissions --no-user --no-filesize"
+alias l="eza" # -al --no-permissions --no-user --no-filesize"
 alias wttr="curl wttr.in"
+alias omr="omz reload"
 
-export NVM_DIR="$HOME/.config/nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+#export NVM_DIR="$HOME/.config/nvm"
+#[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+#[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
