@@ -119,10 +119,12 @@ alias j="just"
 alias b='buku --suggest'
 alias s="spotify_player"
 alias z="micro ~/.zshrc"
+alias g="gst"
 alias dua="dua interactive"
 alias l="eza" # -al --no-permissions --no-user --no-filesize"
 alias wttr="curl wttr.in"
 alias omr="omz reload"
+alias puffin="/usr/bin/puffin/puffin"
 
 #export NVM_DIR="$HOME/.config/nvm"
 #[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
