@@ -81,6 +81,9 @@ plugins=(
 		zsh-autosuggestions
 		zsh-syntax-highlighting
 		eza
+		zsh-alias-finder
+		send
+		zsh-dircolors-solarized
 		)
 
 source $ZSH/oh-my-zsh.sh
