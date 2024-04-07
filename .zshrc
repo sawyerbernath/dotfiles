@@ -87,6 +87,8 @@ plugins=(
 		timer
 		)
 
+source selector
+
 TIMER_PRECISION=4
 
 source $ZSH/oh-my-zsh.sh
@@ -131,6 +133,7 @@ alias l="eza" # -al --no-permissions --no-user --no-filesize"
 alias wttr="curl wttr.in"
 alias omr="omz reload"
 alias puffin="/usr/bin/puffin/puffin"
+alias f="cd ~/finance"
 
 #export NVM_DIR="$HOME/.config/nvm"
 #[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
