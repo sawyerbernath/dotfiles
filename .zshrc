@@ -84,7 +84,10 @@ plugins=(
 		zsh-alias-finder
 		send
 		zsh-dircolors-solarized
+		timer
 		)
+
+TIMER_PRECISION=4
 
 source $ZSH/oh-my-zsh.sh
 
