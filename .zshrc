@@ -133,6 +133,7 @@ alias wttr="curl wttr.in"
 alias omr="omz reload"
 alias puffin="/usr/bin/puffin/puffin"
 alias f="cd ~/finance"
+alias j="micro ${LEDGER_FILE}"
 
 #export NVM_DIR="$HOME/.config/nvm"
 #[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
