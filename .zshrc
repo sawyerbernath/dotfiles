@@ -131,7 +131,6 @@ alias dua="dua interactive"
 #alias l="eza" # -al --no-permissions --no-user --no-filesize"
 alias wttr="curl wttr.in"
 alias omr="omz reload"
-alias puffin="/usr/bin/puffin/puffin"
 alias f="cd ~/finance"
 alias j="micro ${LEDGER_FILE}"
 
