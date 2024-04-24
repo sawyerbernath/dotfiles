@@ -76,6 +76,7 @@ zstyle ':omz:plugins:eza' 'show-group' no
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
+		archlinux
 		git
 		#zsh-autocomplete
 		zsh-autosuggestions
