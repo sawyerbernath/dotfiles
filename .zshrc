@@ -99,9 +99,6 @@ source $ZSH/oh-my-zsh.sh
 # export MANPATH="/usr/local/man:$MANPATH"
 export LEDGER_FILE=~/finance/2024.journal
 
-# You may need to manually set your language environment
-# export LANG=en_US.UTF-8
-
 # Preferred editor for local and remote sessions
 # if [[ -n $SSH_CONNECTION ]]; then
 #   export EDITOR='vim'
@@ -111,20 +108,13 @@ export LEDGER_FILE=~/finance/2024.journal
 
 export EDITOR='micro'
 
-# Compilation flags
-# export ARCHFLAGS="-arch x86_64"
-
 # Set personal aliases, overriding those provided by oh-my-zsh libs,
 # plugins, and themes. Aliases can be placed here, though oh-my-zsh
 # users are encouraged to define aliases within the ZSH_CUSTOM folder.
 # For a full list of active aliases, run `alias`.
-#
-# Example aliases
-# alias zshconfig="mate ~/.zshrc"
-# alias ohmyzsh="mate ~/.oh-my-zsh"
+
 alias m="micro"
 alias h="hledger -V"
-alias b='buku --suggest'
 alias s="spotify_player"
 alias z="micro ~/.zshrc"
 alias g="gst"
@@ -135,6 +125,18 @@ alias omr="omz reload"
 alias f="cd ~/finance"
 alias j="micro ${LEDGER_FILE}"
 alias dot="cd ~/dotfiles"
+
+#replacement for buku alias
+#empty buku call prints all bookmarks
+#otherwise, call buku with the given parameters
+b() {
+	if [[ $1 == "" ]]
+	then
+		buku -p
+	else
+		buku --suggest "$@"
+	fi
+}
 
 #export NVM_DIR="$HOME/.config/nvm"
 #[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
