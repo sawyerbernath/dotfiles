@@ -125,6 +125,7 @@ alias omr="omz reload"
 alias f="cd ~/finance"
 alias j="micro ${LEDGER_FILE}"
 alias dot="cd ~/dotfiles"
+alias hedit="hledger-edit"
 
 #replacement for buku alias
 #empty buku call prints all bookmarks
