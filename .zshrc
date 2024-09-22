@@ -122,7 +122,10 @@ alias dua="dua interactive"
 #alias l="eza" # -al --no-permissions --no-user --no-filesize"
 alias wttr="curl wttr.in"
 alias omr="omz reload"
-alias f="cd ~/finance"
+alias f='(
+	cd ~/finance
+ 	source fin-start.zsh
+	)'
 alias j="micro ${LEDGER_FILE}"
 alias dot="cd ~/dotfiles"
 alias hedit="hledger-edit"
