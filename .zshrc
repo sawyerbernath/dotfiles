@@ -83,7 +83,7 @@ plugins=(
 		#zsh-autocomplete
 		zsh-autosuggestions
 		zsh-syntax-highlighting
-		eza
+		#eza
 		zsh-alias-finder
 		send
 		zsh-dircolors-solarized
