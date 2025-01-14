@@ -87,7 +87,7 @@ plugins=(
 		zsh-alias-finder
 		send
 		zsh-dircolors-solarized
-		timer
+		#timer
 		)
 
 source selector
@@ -99,7 +99,7 @@ source $ZSH/oh-my-zsh.sh
 # User configuration
 
 # export MANPATH="/usr/local/man:$MANPATH"
-export LEDGER_FILE=~/finance/2024.journal
+export LEDGER_FILE=~/finance/2025.journal
 
 # Preferred editor for local and remote sessions
 # if [[ -n $SSH_CONNECTION ]]; then
@@ -116,7 +116,7 @@ export EDITOR='micro'
 # For a full list of active aliases, run `alias`.
 
 alias m="micro"
-alias h="hledger -V"
+alias h="hledger"
 alias s="spotify_player"
 alias z="micro ~/.zshrc"
 alias g="gst"
