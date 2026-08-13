@@ -1,7 +1,6 @@
 #!/usr/bin/zsh
 
-# TODO:
-# Add some prompts and echos and stuff?
+# Currently this is best used as a set of instructions rather than a script.
 
 # run script on a new system to install stuff
 # distro-specific lines are commented out at the top
@@ -11,6 +10,16 @@
 # sudo apt upgrade
 # sudo apt install zsh gh miller jq
 
+# archlinux setup
+# (several things missing here)
+yay micro git github
+micro /etc/locale.gen
+# uncomment en_US.UTF-8
+locale-gen
+# powerline fonts: there's an archlinux package, but installing it didn't seem to work.
+# I also tried the "other environments" instructions here, and they didn't work:
+# https://github.com/powerline/fonts
+
 yay hledger
 # if the version is up to date, install there.
 # otherwise, install hledger binary:
@@ -18,7 +27,7 @@ cd /usr/local/bin
 curl -LOC- https://github.com/simonmichael/hledger/releases/download/1.34/hledger-linux-x64.tar.gz
 tar xvf hledger-linux-x64.tar.gz && rm -f hledger-linux-x64.tar.gz
 cd
-hledger --version    # should show 1.34
+hledger --version    # should show 1.52 as of 8/13/26
 
 
 wsl# oh-my-zshell and plugins
